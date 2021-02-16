@@ -8,7 +8,7 @@ Summary:	Parameterized testing with any Python test framework
 Summary(pl.UTF-8):	Parametryzowane testowanie w dowolnym szkielecie testów pythonowych
 Name:		python-parameterized
 Version:	0.8.1
-Release:	1
+Release:	2
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/parameterized/
@@ -87,10 +87,14 @@ rm -rf $RPM_BUILD_ROOT
 %py_install
 
 %py_postclean
+%{__rm} $RPM_BUILD_ROOT%{py_sitescriptdir}/parameterized/test.py*
 %endif
 
 %if %{with python3}
 %py3_install
+
+%{__rm} $RPM_BUILD_ROOT%{py3_sitescriptdir}/parameterized/test.py
+%{__rm} $RPM_BUILD_ROOT%{py3_sitescriptdir}/parameterized/__pycache__/test.*.py*
 %endif
 
 %clean
