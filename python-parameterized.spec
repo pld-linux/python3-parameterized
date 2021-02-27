@@ -8,7 +8,7 @@ Summary:	Parameterized testing with any Python test framework
 Summary(pl.UTF-8):	Parametryzowane testowanie w dowolnym szkielecie testów pythonowych
 Name:		python-parameterized
 Version:	0.8.1
-Release:	2
+Release:	3
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/parameterized/
