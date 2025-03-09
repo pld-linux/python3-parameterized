@@ -61,7 +61,7 @@ Parametryzowane testowanie w dowolnym szkielecie testów pythonowych
 
 %prep
 %setup -q -n parameterized-%{version}
-%patch0 -p1
+%patch -P 0 -p1
 
 %build
 %if %{with python2}
