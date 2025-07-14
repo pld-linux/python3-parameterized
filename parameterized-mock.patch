@@ -1,0 +1,11 @@
+--- parameterized-0.9.0/parameterized/test.py.orig	2023-03-27 03:43:14.000000000 +0200
++++ parameterized-0.9.0/parameterized/test.py	2025-07-14 18:51:25.267179971 +0200
+@@ -2,7 +2,7 @@
+ 
+ import inspect
+ import sys
+-import mock
++from unittest import mock
+ from functools import wraps
+ from unittest import TestCase
+ try:
